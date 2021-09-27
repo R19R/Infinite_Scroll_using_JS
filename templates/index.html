@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="{{url_for('static', filename='css/style.css')}}"
+      rel="stylesheet"
+      type='text/css'
+    />
+    <title>Infinite Scroll</title>
+</head>
+<body>
+    <h2 id="heading">Infinite Scroll</h2>
+    <div id="sample">
+        
+        <table id="listSongs-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Department</th>
+            </tr>
+            </thead>
+            <tbody id="listSongs-table-tbody">
+            </tbody>
+        </table>
+    </div>
+    <script src="{{url_for('static', filename='js/infinite.js')}}"></script>    
+</body>
+</html>
